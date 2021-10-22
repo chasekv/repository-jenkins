@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('compile stage') {
            steps {
-               maven(maven: mvn --version) 
+               maven(maven: mvn) 
                    sh '''mvn clean compile'''
             }
         }
