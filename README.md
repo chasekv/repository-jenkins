@@ -1,11 +1,11 @@
-pipeline {
-    agent any
-    stages {
-        stage ('compile stage') {
-           steps {
-               maven(mvn --version) 
-                   sh '''mvn clean compile'''
+pipeline { 
+    agent any 
+        stages { 
+            stage ('Build') { 
+                steps { 
+                    echo 
+                    'Running build phase. ' 
+                }
             }
         }
-  }
-}
+    }
