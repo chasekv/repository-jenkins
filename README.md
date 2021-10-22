@@ -3,7 +3,7 @@ pipeline {
         stages { 
             stage ('Compile') { 
                 steps { 
-                    sh 'mvn --version' 
+                    sh 'df -h' 
                 }
             }
         }
