@@ -1,9 +1,9 @@
 pipeline { 
     agent any 
         stages { 
-            stage ('Build') { 
+            stage ('Compile') { 
                 steps { 
-                    echo 'Running build phase.' 
+                    sh 'mvn --version' 
                 }
             }
         }
